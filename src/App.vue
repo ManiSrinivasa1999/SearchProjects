@@ -1,13 +1,22 @@
 <template>
   <!-- App.vue -->
 
-<v-app>
-  <v-navigation-drawer app>
+<v-app dark>
+  <v-navigation-drawer>
     <!-- -->
   </v-navigation-drawer>
 
   <v-app-bar app>
     <!-- -->
+    <v-spacer></v-spacer>
+    <v-text-field
+      class="ma-auto mt-1"
+      label="Search"
+      append-icon="fas fa-search"
+      solo
+      rounded
+    ></v-text-field>
+    <v-spacer></v-spacer>
   </v-app-bar>
 
   <!-- Sizes your content based upon application components -->
@@ -18,8 +27,12 @@
     </v-container>
   </v-main>
 
-  <v-footer app>
-    <!-- -->
+  <v-footer>
+    <v-row class="text-center">
+      <v-col>
+        &copy; 2020 manisrinivasa
+      </v-col>
+    </v-row>
   </v-footer>
 </v-app>
 </template>
